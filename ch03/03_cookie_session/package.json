@@ -1,5 +1,5 @@
 {
-   "name": "02_middleware",
+   "name": "03_cookie_session",
    "version": "1.0.0",
    "main": "index.js",
    "scripts": {
@@ -11,8 +11,10 @@
    "license": "ISC",
    "description": "",
    "dependencies": {
+      "cookie-parser": "^1.4.7",
       "dotenv": "^16.4.5",
       "express": "^4.21.1",
+      "express-session": "^1.18.1",
       "morgan": "^1.10.0"
    },
    "devDependencies": {
