@@ -6,5 +6,5 @@ const os = require('os')
 
 // 여기에 코드를 작성하세요.
 
-console.log('Total Memory:', (os.totalmem() / 1073741824).toFixed(0))
-console.log('Free Memory:', (os.freemem() / 1073741824).toFixed(0))
+console.log('Total Memory:', (os.totalmem() / 1e9).toFixed(2))
+console.log('Free Memory:', (os.freemem() / 1e9).toFixed(2))

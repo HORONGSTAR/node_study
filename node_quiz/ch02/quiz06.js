@@ -6,9 +6,9 @@ setImmediate(() => {
 // 2. setInterval: 1초마다 "Tick"을 출력, 5번 출력 후 멈춤
 let count = 0
 const interval = setInterval(() => {
+   count += 1
    if (count < 5) {
       console.log('Tick')
-      count += 1
    }
 }, 1000)
 

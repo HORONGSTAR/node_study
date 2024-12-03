@@ -1,7 +1,13 @@
-const fs = require('fs')
+const fs = require('fs').promises
 
 function readFileAndUppercase(filePath) {
-   // 파일 읽는 코드 작성
+   fs.readFile(filePath)
+      .then((data) => {
+         console.log(data.toString().toUpperCase())
+      })
+      .catch((err) => {
+         console.error(err)
+      })
 }
 
 readFileAndUppercase('input.txt')
