@@ -19,7 +19,7 @@ try {
 }
 
 const upload = multer({
-   //uploads 폴더에 파일을 올리고
+   // uploads 폴더에 파일을 올리고
    // 현재시간-파일명.png 형태로 이미지 파일을 저장
    // 파일 크기 제한은 7MB
    storage: multer.diskStorage({
@@ -60,5 +60,4 @@ app.use((err, req, res, next) => {
    console.error(err)
    res.status(500).send(err.message)
 })
-
 app.listen(3000, () => console.log('Server running on http://localhost:3000'))
