@@ -1,0 +1,11 @@
+const fs = require('fs')
+
+fs.writeFile('./writeme.txt', '글이 입력됩니다.', (err) => {
+   if (err) {
+      throw err
+   }
+   console.log('파일쓰기 완료')
+   fs.readFile('./writeme.txt', (err, data) => {
+      console.log(data.toString())
+   })
+})
